@@ -151,7 +151,7 @@ const projectDetailsData = {
   adbrag: {
     title: 'Retrieval-Augmented Generation (RAG) System — ADB',
     tag: 'Enterprise AI & Knowledge Systems',
-    image: 'assets/images/adb_rag.jpg',
+    image: 'assets/images/adb_rag.png',
     description: 'An advanced Retrieval-Augmented Generation (RAG) knowledge engine built for the Agricultural Development Bank (ADB). The platform combines a graph database (Neo4j) with a relational database (PostgreSQL) to power intelligent, context-aware information retrieval, paired with an interactive React frontend for fast and accurate banking intelligence.',
     highlights: [
       'Hybrid architecture uniting Neo4j graph nodes for relationship reasoning and PostgreSQL for structured data integrity',
