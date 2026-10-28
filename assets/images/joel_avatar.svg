@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Dark Radial Gradient -->
+    <radialGradient id="cardBg" cx="50%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#1f2638"/>
+      <stop offset="60%" stop-color="#121622"/>
+      <stop offset="100%" stop-color="#0a0d14"/>
+    </radialGradient>
+
+    <!-- Ambient Cyan Radial Glow Behind Head -->
+    <radialGradient id="headGlow" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#6366f1" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Skin Tone Shading (3D Memoji style) -->
+    <linearGradient id="skinBase" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b67a54"/>
+      <stop offset="60%" stop-color="#995d38"/>
+      <stop offset="100%" stop-color="#7a4424"/>
+    </linearGradient>
+
+    <linearGradient id="skinHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c98d66" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#995d38" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="neckShadow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#542c14"/>
+      <stop offset="100%" stop-color="#3d1e0c"/>
+    </linearGradient>
+
+    <!-- Hair Shading -->
+    <linearGradient id="hairDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a2e3b"/>
+      <stop offset="40%" stop-color="#1a1c24"/>
+      <stop offset="100%" stop-color="#0e1017"/>
+    </linearGradient>
+
+    <!-- Modern Dark Hoodie / Sweater -->
+    <linearGradient id="hoodieGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#262c3d"/>
+      <stop offset="50%" stop-color="#1b202e"/>
+      <stop offset="100%" stop-color="#10131d"/>
+    </linearGradient>
+
+    <!-- Glass Reflection Gradient -->
+    <linearGradient id="lensReflect" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+      <stop offset="40%" stop-color="#38bdf8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="500" height="500" fill="url(#cardBg)"/>
+
+  <!-- Glowing Backdrop Circle -->
+  <circle cx="250" cy="225" r="160" fill="url(#headGlow)"/>
+
+  <!-- Background Decorative Code Elements -->
+  <g opacity="0.15" stroke="#38bdf8" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M 65 140 L 115 140 L 135 160"/>
+    <circle cx="65" cy="140" r="4" fill="#38bdf8"/>
+    <path d="M 435 140 L 385 140 L 365 160"/>
+    <circle cx="435" cy="140" r="4" fill="#38bdf8"/>
+  </g>
+
+  <!-- AVATAR CHARACTER -->
+  <g id="avatarGroup">
+    
+    <!-- Torso / Shoulders (Sweater) -->
+    <path d="M 90 500 C 90 395 165 365 250 365 C 335 365 410 395 410 500 Z" fill="url(#hoodieGrad)"/>
+    
+    <!-- Collar Line -->
+    <path d="M 190 380 C 220 420 280 420 310 380 C 285 400 215 400 190 380 Z" fill="#141724" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.25"/>
+
+    <!-- Neck -->
+    <path d="M 215 300 L 215 375 C 235 385 265 385 285 375 L 285 300 Z" fill="url(#neckShadow)"/>
+    <!-- Neck Highlight -->
+    <path d="M 225 315 L 225 365 C 240 372 260 372 275 365 L 275 315 Z" fill="#7a4424" opacity="0.5"/>
+
+    <!-- Ears -->
+    <g id="ears">
+      <!-- Left Ear -->
+      <circle cx="155" cy="235" r="28" fill="#995d38"/>
+      <circle cx="155" cy="235" r="16" fill="#6e3c1e"/>
+      <path d="M 152 225 C 158 230 158 240 152 245" stroke="#4d2711" stroke-width="3" fill="none" stroke-linecap="round"/>
+      
+      <!-- Right Ear -->
+      <circle cx="345" cy="235" r="28" fill="#995d38"/>
+      <circle cx="345" cy="235" r="16" fill="#6e3c1e"/>
+      <path d="M 348 225 C 342 230 342 240 348 245" stroke="#4d2711" stroke-width="3" fill="none" stroke-linecap="round"/>
+    </g>
+
+    <!-- Head / Face Base Shape -->
+    <path d="M 170 215 C 170 120 330 120 330 215 C 330 295 298 335 250 335 C 202 335 170 295 170 215 Z" fill="url(#skinBase)"/>
+
+    <!-- Face 3D Highlight Curve -->
+    <path d="M 175 200 C 175 130 325 130 325 200 C 315 140 185 140 175 200 Z" fill="url(#skinHighlight)"/>
+
+    <!-- Modern Clean Haircut / Fade -->
+    <path d="M 162 195 C 155 125 205 85 250 82 C 295 85 345 125 338 195 C 332 150 318 118 250 118 C 182 118 168 150 162 195 Z" fill="url(#hairDark)"/>
+    <!-- Top Hair Volume & Texture -->
+    <path d="M 168 165 C 160 110 205 86 250 86 C 295 86 340 110 332 165 C 320 110 285 96 250 96 C 215 96 180 110 168 165 Z" fill="#2d3345"/>
+
+    <!-- Eyebrows -->
+    <path d="M 188 196 Q 212 186 232 196" stroke="#161820" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+    <path d="M 312 196 Q 288 186 268 196" stroke="#161820" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Eyes -->
+    <g id="eyes">
+      <!-- Left Eye -->
+      <ellipse cx="212" cy="218" rx="10.5" ry="11.5" fill="#ffffff"/>
+      <circle cx="213" cy="218" r="6.5" fill="#1b1c24"/>
+      <circle cx="215" cy="216" r="2.2" fill="#ffffff"/>
+
+      <!-- Right Eye -->
+      <ellipse cx="288" cy="218" rx="10.5" ry="11.5" fill="#ffffff"/>
+      <circle cx="287" cy="218" r="6.5" fill="#1b1c24"/>
+      <circle cx="289" cy="216" r="2.2" fill="#ffffff"/>
+    </g>
+
+    <!-- Modern Stylish Round Developer Glasses -->
+    <g id="glassesFrame">
+      <!-- Bridge -->
+      <path d="M 238 214 Q 250 208 262 214" stroke="#38bdf8" stroke-width="4.5" fill="none"/>
+      
+      <!-- Left Lens & Frame -->
+      <circle cx="212" cy="218" r="27" fill="rgba(56, 189, 248, 0.08)" stroke="#38bdf8" stroke-width="4.5"/>
+      <path d="M 194 204 A 27 27 0 0 1 228 200" stroke="url(#lensReflect)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- Right Lens & Frame -->
+      <circle cx="288" cy="218" r="27" fill="rgba(56, 189, 248, 0.08)" stroke="#38bdf8" stroke-width="4.5"/>
+      <path d="M 270 204 A 27 27 0 0 1 304 200" stroke="url(#lensReflect)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- Temples / Arms to Ears -->
+      <path d="M 185 214 L 155 224" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M 315 214 L 345 224" stroke="#38bdf8" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+
+    <!-- Nose -->
+    <path d="M 250 220 Q 257 248 259 252 C 255 257 245 257 241 252" stroke="#663417" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+    <!-- Friendly Smile -->
+    <path d="M 220 278 Q 250 304 280 278" stroke="#381809" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M 226 280 Q 250 298 274 280 Z" fill="#ffffff"/>
+
+    <!-- Neat Goatee / Chin Accent -->
+    <path d="M 234 308 Q 250 324 266 308 Q 250 316 234 308 Z" fill="#1e202b" opacity="0.6"/>
+
+  </g>
+</svg>
