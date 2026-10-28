@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joel Baiden-Amissah | Full-Stack Web Developer & Data Analytics Enthusiast</title>
+  <meta name="description" content="Portfolio of Joel Baiden-Amissah — Full-Stack Web Developer & Data Analytics Enthusiast based in Accra, Ghana. Experienced in React, PHP, Python, Neo4j, RAG systems, and Power BI dashboards.">
+  <meta name="keywords" content="Joel Baiden-Amissah, Baiden-Amissah Joel, Full-Stack Developer Ghana, Data Analyst Accra, React, PHP, Python, Neo4j, RAG, Power BI, Gilla Africa, UMaT">
+  <meta name="author" content="Joel Baiden-Amissah">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Joel Baiden-Amissah | Full-Stack Web Developer & Data Analytics Enthusiast">
+  <meta property="og:description" content="Building responsive websites, database-driven applications, BI dashboards, and intelligent RAG systems with modern web technologies.">
+  <meta property="og:image" content="assets/images/joel_avatar.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="assets/images/joel_avatar.jpg">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Ambient Glow Elements -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+  <div class="bg-grid-pattern"></div>
+
+  <!-- ==========================================================================
+       FLOATING PILL NAVIGATION (Inspired by Ajay Dives & Modern NextUI)
+       ========================================================================== -->
+  <header class="navbar-wrapper">
+    <nav class="nav-pill-container" id="mainNav">
+      <a href="#home" class="nav-brand" aria-label="Joel Baiden-Amissah Home">
+        <img src="assets/images/joel_avatar.jpg" alt="Joel Baiden-Amissah" class="nav-avatar-mini">
+        <span>Joel<span style="color: var(--accent-cyan);">.dev</span></span>
+        <span class="nav-status-dot" title="Available for opportunities"></span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- CTA Actions -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-nav-cv">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Let's Talk</span>
+        </a>
+
+        <button class="btn-mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay">
+    <button class="btn-modal-close" id="mobileNavClose" style="top: 2rem; right: 2rem;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#about" class="mobile-nav-link">About</a></li>
+      <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-nav-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <div style="margin-top: 2.5rem;">
+      <a href="mailto:baidenamissahjoel@gmail.com" class="btn btn-primary">
+        Email Joel Directly
+      </a>
+    </div>
+  </div>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (Bento Masterpiece)
+         ========================================================================== -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Left: Hero Introduction -->
+          <div class="hero-content">
+            <div class="hero-badge-wrap">
+              <span class="badge-status">
+                <span class="nav-status-dot"></span>
+                Open to Full-Stack & Data Analytics Roles
+              </span>
+              <span class="badge-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Accra, Ghana 🇬🇭
+              </span>
+            </div>
+
+            <h1 class="hero-title">
+              Full-Stack Developer & <span class="gradient-text">Data Analytics Enthusiast</span>
+            </h1>
+
+            <div class="hero-role-title">
+              <span class="code-bracket">&lt;</span>
+              <span>Joel Baiden-Amissah</span>
+              <span class="code-bracket">/&gt;</span>
+            </div>
+
+            <p class="hero-description">
+              Building responsive websites, database-driven applications, and interactive BI dashboards. Comfortable across the stack with PHP, JavaScript, React, and SQL/NoSQL databases, with specialized expertise in Retrieval-Augmented Generation (RAG) and graph databases.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Explore Featured Work
+              </a>
+              <a href="#experience" class="btn btn-glass">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                Experience & Roles
+              </a>
+              <a href="#contact" class="btn btn-outline-cyan">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                Get In Touch
+              </a>
+            </div>
+
+            <!-- Key Metrics Bar -->
+            <div class="hero-stats">
+              <div class="stat-item">
+                <div class="stat-number">4<span class="stat-plus">+</span></div>
+                <div class="stat-label">Organizations & Internships</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">8<span class="stat-plus">+</span></div>
+                <div class="stat-label">Production Web & BI Apps</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">3<span class="stat-plus">+</span></div>
+                <div class="stat-label">Years ICT Instruction</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">100<span class="stat-plus">%</span></div>
+                <div class="stat-label">Delivery Commitment</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Hero Visual Frame (Bento Style with Profile & Tech Badges) -->
+          <div class="hero-visual">
+            <!-- Floating Badge: React & Full Stack -->
+            <div class="floating-tech-pill pill-react">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="12" rx="10" ry="4.5"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(60 12 12)"></ellipse><ellipse cx="12" cy="12" rx="10" ry="4.5" transform="rotate(120 12 12)"></ellipse><circle cx="12" cy="12" r="1.5" fill="currentColor"></circle></svg>
+              <span>React & Full-Stack</span>
+            </div>
+
+            <!-- Floating Badge: RAG & Neo4j -->
+            <div class="floating-tech-pill pill-node">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><line x1="3" y1="12" x2="9" y2="12"></line><line x1="15" y1="12" x2="21" y2="12"></line><line x1="12" y1="3" x2="12" y2="9"></line><line x1="12" y1="15" x2="12" y2="21"></line></svg>
+              <span>RAG & Neo4j Graph</span>
+            </div>
+
+            <!-- Floating Badge: Power BI & Data -->
+            <div class="floating-tech-pill pill-ai">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              <span>Power BI & Analytics</span>
+            </div>
+
+            <div class="hero-card-frame">
+              <div class="hero-image-box">
+                <img src="assets/images/joel_avatar.jpg" alt="Joel Baiden-Amissah" loading="eager">
+                <div class="hero-image-overlay">
+                  <div class="hero-image-nameplate">
+                    <span class="name">Joel Baiden-Amissah</span>
+                    <span class="role">Full-Stack Developer & Analyst</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="hero-card-footer">
+                <span class="developer-quote-pill">
+                  "Turning complex data & code into intuitive digital solutions."
+                </span>
+                <span class="time-box" id="liveClockMini" title="Accra Time">
+                  Accra GMT
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT SECTION (Bento Modular Grid)
+         ========================================================================== -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Professional Profile
+          </span>
+          <h2 class="section-title">
+            Passionate Developer, <span class="text-gradient">Data Analyst</span> & Educator
+          </h2>
+          <p class="section-desc">
+            Combining strong technical delivery across web and BI stacks with clear communication and a teaching mindset.
+          </p>
+        </div>
+
+        <div class="about-bento-grid">
+          
+          <!-- Card 1: Professional Summary (Span 2) -->
+          <div class="bento-card bento-span-2">
+            <div class="bento-card-glow"></div>
+            <div class="bento-card-header">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </div>
+              <h3 class="bento-card-title">Professional Summary</h3>
+            </div>
+            <p class="bento-text">
+              I am a motivated software developer based in <strong>Accra, Ghana</strong>, with a blended background spanning full-stack web development and data analytics. I specialize in engineering responsive web applications, robust database-driven systems, and interactive Business Intelligence dashboards.
+            </p>
+            <p class="bento-text">
+              I work comfortably across modern technologies including <strong>PHP, JavaScript, React, SQL/NoSQL databases</strong>, and have developed specialized expertise in <strong>Retrieval-Augmented Generation (RAG)</strong> architectures combining Neo4j graph databases with relational PostgreSQL. My teaching background equips me with exceptional clarity in communication, teamwork, and problem decomposition.
+            </p>
+
+            <div class="ventures-list">
+              <div class="venture-item">
+                <div class="venture-role">EdTech Initiative</div>
+                <div class="venture-name">Gilla Africa</div>
+                <div class="venture-desc">Contributing as team member supporting mobile deployments for African digital learning platforms.</div>
+              </div>
+              <div class="venture-item">
+                <div class="venture-role">Banking AI Innovation</div>
+                <div class="venture-name">Agricultural Development Bank</div>
+                <div class="venture-desc">Engineered an internal RAG knowledge retrieval system combining graph and relational queries.</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Quote & Live Time Widget (Ajay inspired) -->
+          <div class="bento-card bento-quote-card">
+            <div class="bento-quote-text">
+              "Combining strong technical delivery with clear communication and a continuous learning mindset to create meaningful impact."
+            </div>
+            <div class="bento-quote-author">
+              — Joel Baiden-Amissah
+            </div>
+            <div class="location-widget">
+              <span style="font-size: 0.85rem; color: var(--text-secondary);">Accra, Ghana Time:</span>
+              <span class="time-box" id="liveClock">Loading time...</span>
+            </div>
+          </div>
+
+          <!-- Card 3: Education & Academics -->
+          <div class="bento-card">
+            <div class="bento-card-header">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <h3 class="bento-card-title">Academic Background</h3>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 1rem;">
+              <div>
+                <h4 style="font-size: 1.05rem; color: #fff; font-weight: 700;">BSc, Information Systems & Tech</h4>
+                <div style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">University of Mines & Technology (UMaT)</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.2rem;">Tarkwa, Ghana • 2023 – 2026</div>
+              </div>
+              <div style="border-top: 1px solid var(--border-subtle); padding-top: 0.75rem;">
+                <h4 style="font-size: 1.05rem; color: #fff; font-weight: 700;">WASSCE, General Arts</h4>
+                <div style="font-size: 0.85rem; color: var(--accent-cyan); font-weight: 600;">Mawuli School</div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); font-family: var(--font-mono); margin-top: 0.2rem;">Ho, Ghana • 2018 – 2021</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Full-Stack Craft -->
+          <div class="bento-card">
+            <div class="bento-card-header">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+              </div>
+              <h3 class="bento-card-title">Full-Stack Delivery</h3>
+            </div>
+            <p class="bento-text">
+              End-to-end web engineering leveraging modern frameworks, RESTful APIs, and relational/document databases.
+            </p>
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-bullet">✓</div>
+                <div class="pillar-content">
+                  <h4>CRUD & Business Workflows</h4>
+                  <p>PHP, MySQL, MongoDB, and Postman testing</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-bullet">✓</div>
+                <div class="pillar-content">
+                  <h4>Component-Driven UI</h4>
+                  <p>React, JavaScript, HTML5/CSS3, and Figma</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Data & Intelligence -->
+          <div class="bento-card">
+            <div class="bento-card-header">
+              <div class="bento-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3 class="bento-card-title">Analytics & RAG</h3>
+            </div>
+            <p class="bento-text">
+              Transforming raw datasets into actionable intelligence through Power BI visual reports, Excel modeling, and AI RAG pipelines.
+            </p>
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <div class="pillar-bullet">✓</div>
+                <div class="pillar-content">
+                  <h4>Graph Knowledge (Neo4j)</h4>
+                  <p>Semantic relationships & hybrid RAG queries</p>
+                </div>
+              </div>
+              <div class="pillar-item">
+                <div class="pillar-bullet">✓</div>
+                <div class="pillar-content">
+                  <h4>BI Dashboards</h4>
+                  <p>Power BI, PivotTables, and Trend Analytics</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            Technical Stack
+          </span>
+          <h2 class="section-title">
+            Technologies & <span class="text-gradient">Core Competencies</span>
+          </h2>
+          <p class="section-desc">
+            A comprehensive toolbox of programming languages, database architectures, analytical suites, and deployment platforms.
+          </p>
+        </div>
+
+        <div class="skills-container">
+          
+          <!-- Category 1: Languages & Databases -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"></ellipse><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">Code & Databases</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">JavaScript (ES6+)</span>
+              <span class="tech-pill">PHP</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">PostgreSQL</span>
+              <span class="tech-pill">MongoDB</span>
+              <span class="tech-pill">Neo4j Graph DB</span>
+              <span class="tech-pill">HTML5 & CSS3</span>
+            </div>
+          </div>
+
+          <!-- Category 2: Web & UI/UX -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+              </div>
+              <h3 class="skill-cat-title">Web & UI/UX</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">WordPress</span>
+              <span class="tech-pill">UI/UX Design</span>
+              <span class="tech-pill">Figma</span>
+              <span class="tech-pill">REST APIs</span>
+              <span class="tech-pill">Responsive Design</span>
+              <span class="tech-pill">Adobe Photoshop</span>
+              <span class="tech-pill">Canva</span>
+            </div>
+          </div>
+
+          <!-- Category 3: Data Analytics & BI -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+              </div>
+              <h3 class="skill-cat-title">Data & Analytics</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="tech-pill">Microsoft Excel</span>
+              <span class="tech-pill">VLOOKUP & Formulas</span>
+              <span class="tech-pill">PivotTables</span>
+              <span class="tech-pill">Power BI</span>
+              <span class="tech-pill">Tableau</span>
+              <span class="tech-pill">Data Visualization</span>
+              <span class="tech-pill">RAG Systems</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Hosting, Tools & OS -->
+          <div class="skill-category-card">
+            <div class="skill-cat-header">
+              <div class="skill-cat-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+              </div>
+              <h3 class="skill-cat-title">Hosting & DevOps</h3>
+            </div>
+            <div class="skill-pills-wrap">
+              <span class="tech-pill">Vercel</span>
+              <span class="tech-pill">Netlify</span>
+              <span class="tech-pill">GitHub Pages</span>
+              <span class="tech-pill">Render</span>
+              <span class="tech-pill">cPanel & Cloudflare</span>
+              <span class="tech-pill">Postman</span>
+              <span class="tech-pill">Git & GitHub</span>
+              <span class="tech-pill">Windows & Fedora</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROFESSIONAL EXPERIENCE & INTERNSHIPS (Timeline Section)
+         ========================================================================== -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            Career Trajectory
+          </span>
+          <h2 class="section-title">
+            Professional <span class="text-gradient">Experience & Internships</span>
+          </h2>
+          <p class="section-desc">
+            Hands-on software development, mobile application deployments, branch banking IT, and technical classroom instruction.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          
+          <!-- Role 1: Gilla Africa -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role">Software Development Intern</h3>
+                <span class="timeline-company-badge">Gilla Africa</span>
+                <span class="timeline-period">Present</span>
+              </div>
+              <div class="timeline-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Accra, Ghana
+              </div>
+              <ul class="timeline-list">
+                <li>Contributed as an active team member across broad organizational technology initiatives.</li>
+                <li>Supported mobile application deployments for an EdTech platform serving educational institutions across Africa.</li>
+                <li>Assisted in cross-functional collaboration and digital learning platform maintenance.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 2: Ikolilu Ghana -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role">Software Development Intern</h3>
+                <span class="timeline-company-badge">Ikolilu Ghana</span>
+                <span class="timeline-period">Oct 2024 – Dec 2024</span>
+              </div>
+              <div class="timeline-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Accra, Ghana
+              </div>
+              <ul class="timeline-list">
+                <li>Assisted in developing and maintaining software applications, contributing to both front-end and back-end functionality.</li>
+                <li>Collaborated with the core development team on troubleshooting, rigorous testing, and debugging software features.</li>
+                <li>Engineered mobile access deep-link solutions for the Ikolilu Parent Portal via SMS routing.</li>
+                <li>Contributed comprehensive documentation for development processes, system architectures, and project workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 3: Agricultural Development Bank PLC -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role">IT Intern</h3>
+                <span class="timeline-company-badge">Agricultural Development Bank, PLC</span>
+                <span class="timeline-period">Nov 2025 – Dec 2025</span>
+              </div>
+              <div class="timeline-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Accra, Ghana
+              </div>
+              <ul class="timeline-list">
+                <li>Supported branch banking operations by handling precise data entry and record-keeping in Microsoft Excel, improving accuracy of day-to-day banking records.</li>
+                <li>Assisted with branch-level IT tasks, network troubleshooting, and technical operations.</li>
+                <li>Gained hands-on exposure to corporate banking protocols and customer relationship management.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Role 4: Life Shepherd College -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-meta">
+                <h3 class="timeline-role">Teaching Staff (ICT)</h3>
+                <span class="timeline-company-badge">Life Shepherd College</span>
+                <span class="timeline-period">2021 – Present</span>
+              </div>
+              <div class="timeline-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                Accra, Ghana
+              </div>
+              <ul class="timeline-list">
+                <li>Taught foundational ICT concepts to upper primary students, covering computer hardware basics, typing proficiency, and safe internet practices.</li>
+                <li>Guided young students in developing digital literacy and problem-solving skills through hands-on practical computer sessions.</li>
+                <li>Built strong communication and mentorship skills that enrich technical team collaboration.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Volunteerism Cards -->
+        <div style="margin-top: 4rem;">
+          <h3 style="font-size: 1.4rem; font-weight: 700; color: #fff; margin-bottom: 1.25rem; text-align: center;">
+            Organisation & Community Volunteerism
+          </h3>
+          <div class="volunteer-grid" style="max-width: 860px; margin: 0 auto;">
+            <div class="volunteer-card">
+              <div class="volunteer-role">EdTech Community</div>
+              <div class="volunteer-title">Gilla Africa — Team Member</div>
+              <div class="volunteer-desc">Supporting digital solutions for schools across Africa, from school management to interactive teaching and learning tools.</div>
+            </div>
+            <div class="volunteer-card">
+              <div class="volunteer-role">Community Tech Service</div>
+              <div class="volunteer-title">Ramseyar Presbyterian Church — IT Volunteer</div>
+              <div class="volunteer-desc">Managing AV and projector operations during services, and managing data collection for church activities, youth events, and community outreach.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         FEATURED PROJECTS SHOWCASE (With LIVE Links & Modal Details)
+         ========================================================================== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            Featured Portfolio
+          </span>
+          <h2 class="section-title">
+            Selected Client & <span class="text-gradient">Web Projects</span>
+          </h2>
+          <p class="section-desc">
+            Explore live deployed web platforms, intelligent RAG document systems, e-commerce storefronts, and interactive dashboards.
+          </p>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack & Web</button>
+          <button class="filter-btn" data-filter="ai">AI & RAG</button>
+          <button class="filter-btn" data-filter="data">Data & Analytics</button>
+        </div>
+
+        <div class="projects-grid">
+          
+          <!-- Project 1: ADB RAG System (LIVE) -->
+          <div class="project-card" data-category="ai fullstack">
+            <div class="project-thumbnail">
+              <span class="project-category-badge" style="background: rgba(16, 185, 129, 0.25); color: #34d399; border-color: rgba(16, 185, 129, 0.4);">Live Client App</span>
+              <img src="assets/images/adb_rag.jpg" alt="ADB RAG System" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">ADB RAG System</h3>
+              <p class="project-desc">
+                Retrieval-Augmented Generation portal combining a Neo4j graph database and PostgreSQL relational store to power intelligent, context-aware information retrieval with a React front end.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">React</span>
+                <span class="project-tag">Neo4j</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">RAG</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://adb-docu-mind.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live: adb-docu-mind
+                </a>
+                <a href="#" class="project-link" data-project-key="adbrag">
+                  Specs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: Motion Clothing (LIVE) -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-thumbnail">
+              <span class="project-category-badge" style="background: rgba(56, 189, 248, 0.2); color: #38bdf8;">Live Storefront</span>
+              <img src="assets/images/visatrack.jpg" alt="Motion Clothing Storefront" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Motion Clothing Storefront</h3>
+              <p class="project-desc">
+                Custom e-commerce storefront for an apparel brand featuring responsive product catalog, dynamic cart calculation, checkout flows, and admin product/order management.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Netlify</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://motion-clothes.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live: motion-clothes
+                </a>
+                <a href="#" class="project-link" data-project-key="motionclothing">
+                  Specs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Gilla Africa (LIVE) -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-thumbnail">
+              <span class="project-category-badge" style="background: rgba(168, 85, 247, 0.2); color: #c084fc;">Live EdTech</span>
+              <img src="assets/images/edumanage.jpg" alt="Gilla Africa Official Website" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Gilla Africa Official Website</h3>
+              <p class="project-desc">
+                Official digital platform for Gilla Africa, an EdTech organization engineering digital learning and comprehensive school-management solutions across the African continent.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Web Dev</span>
+                <span class="project-tag">EdTech</span>
+                <span class="project-tag">Mobile Deployments</span>
+              </div>
+              <div class="project-actions">
+                <a href="https://gilla-africa.com/" target="_blank" rel="noopener noreferrer" class="project-link project-link-primary">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live: gilla-africa.com
+                </a>
+                <a href="#" class="project-link" data-project-key="gillaafrica">
+                  Specs
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Ordering Management System -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-thumbnail">
+              <span class="project-category-badge">Backend System</span>
+              <img src="assets/images/visatrack.jpg" alt="Ordering Management System" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Ordering Management System</h3>
+              <p class="project-desc">
+                Full CRUD corporate ordering management system engineered with PHP, MySQL, and MongoDB backends to streamline business transactions and inventory management.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Postman</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link project-link-primary" data-project-key="orderingmgmt">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  Architecture & Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5: Student Performance BI Dashboard -->
+          <div class="project-card" data-category="data">
+            <div class="project-thumbnail">
+              <span class="project-category-badge">Data Analytics</span>
+              <img src="assets/images/edumanage.jpg" alt="Student Performance BI Dashboard" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Student Performance BI Dashboard</h3>
+              <p class="project-desc">
+                Interactive analytical dashboard built in Power BI and Excel analyzing student academic performance, identifying at-risk trends, and supporting data-driven interventions.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Power BI</span>
+                <span class="project-tag">Excel</span>
+                <span class="project-tag">VLOOKUP</span>
+                <span class="project-tag">PivotTables</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link project-link-primary" data-project-key="studentbi">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  Dashboard Metrics
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6: Ikolilu Parent Portal -->
+          <div class="project-card" data-category="fullstack">
+            <div class="project-thumbnail">
+              <span class="project-category-badge">Mobile Deep-Link</span>
+              <img src="assets/images/facepassx.jpg" alt="Ikolilu Parent Portal" loading="lazy">
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Ikolilu Parent Portal Deep-Link</h3>
+              <p class="project-desc">
+                Mobile deep-link routing solution enabling parents to access the Ikolilu Parent Portal directly via Google Play Store from SMS notifications, streamlining adoption.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Mobile Routing</span>
+                <span class="project-tag">SMS Gateway</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="project-link project-link-primary" data-project-key="ikoliluportal">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                  Implementation Details
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            Connect
+          </span>
+          <h2 class="section-title">
+            Let's Collaborate on <span class="text-gradient">Your Next Solution</span>
+          </h2>
+          <p class="section-desc">
+            Open for full-stack web development projects, data analytics roles, RAG knowledge integrations, and technical consulting.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Left: Information & Quick Links -->
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Get in Touch</h3>
+            <p class="contact-info-desc">
+              Whether you need a high-performance web application, a business intelligence dashboard, or an intelligent database architecture, reach out directly below.
+            </p>
+
+            <div class="contact-methods">
+              
+              <!-- Email -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label">Email Address</div>
+                  <a href="mailto:baidenamissahjoel@gmail.com" class="contact-value">baidenamissahjoel@gmail.com</a>
+                </div>
+                <button class="btn-action-icon" data-copy="baidenamissahjoel@gmail.com" title="Copy email address">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Phone & WhatsApp -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label">Phone & WhatsApp</div>
+                  <a href="tel:+233202033492" class="contact-value">+233 20 203 3492</a>
+                </div>
+                <button class="btn-action-icon" data-copy="+233202033492" title="Copy phone number">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                </button>
+              </div>
+
+              <!-- Location -->
+              <div class="contact-method-item">
+                <div class="contact-icon-box">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label">Base Location</div>
+                  <div class="contact-value">Accra, Ghana 🇬🇭</div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Social Links Row -->
+            <div class="social-links-header">Direct Profiles</div>
+            <div class="social-links-grid">
+              <a href="https://wa.me/233202033492" target="_blank" rel="noopener noreferrer" class="social-link-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://github.com/darnjoel" target="_blank" rel="noopener noreferrer" class="social-link-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-link-btn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Contact Right: Interactive Form -->
+          <div class="contact-form-card">
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nameInput" class="form-label">Your Name</label>
+                  <input type="text" id="nameInput" class="form-control" placeholder="e.g. Samuel Mensah" required>
+                </div>
+                <div class="form-group">
+                  <label for="emailInput" class="form-label">Your Email</label>
+                  <input type="email" id="emailInput" class="form-control" placeholder="name@company.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subjectInput" class="form-label">Subject</label>
+                <input type="text" id="subjectInput" class="form-control" placeholder="Project Inquiry / Job Opportunity / Collaboration" required>
+              </div>
+
+              <div class="form-group">
+                <label for="messageInput" class="form-label">Message</label>
+                <textarea id="messageInput" class="form-control" placeholder="Describe your web development requirements, analytics needs, or team opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                Send Message to Joel
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Joel Baiden-Amissah</div>
+          <div class="footer-tagline">Full-Stack Web Developer & Data Analytics Enthusiast • Accra, Ghana 🇬🇭</div>
+        </div>
+
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-copyright">
+        <div>&copy; 2026 Joel Baiden-Amissah. All rights reserved. Built with modern web craft.</div>
+        <button id="scrollTopBtn" class="btn-scroll-top">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+          Back to Top
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOG FOR PROJECT DETAILS
+       ========================================================================== -->
+  <div class="modal-overlay" id="projectModalOverlay">
+    <div class="modal-content">
+      <button class="btn-modal-close" id="modalCloseBtn" aria-label="Close project modal">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+      <div id="modalDynamicContent">
+        <!-- Injected dynamically via main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
